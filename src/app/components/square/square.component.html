@@ -1,0 +1,6 @@
+<button [ngClass]="displayPlayer" 
+        [class.disabled]="!enabled"
+        (click)="handleClick()" 
+        [disabled]="!enabled">
+  {{ text }}
+</button>

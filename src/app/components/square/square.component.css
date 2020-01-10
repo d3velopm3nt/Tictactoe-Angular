@@ -1,0 +1,43 @@
+.square {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin:2px;
+}
+
+.square-playero {
+    background-color: #00ff;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin:2px;
+}
+
+.square-playerx {
+background-color: #00ff00;
+width: 80px;
+height: 80px;
+border: 1px solid black;
+cursor: pointer;
+margin:2px;
+}
+
+.disabled {
+    cursor: auto;
+}
+
+.square-win{
+    animation: winning 1s 1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes winning{
+0% {background-color:#fff;}
+25% {background-color: coral}
+50% {background-color:#fff;}
+100% {background-color: rgb(255, 80, 124)}
+}
